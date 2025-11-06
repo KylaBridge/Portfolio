@@ -65,7 +65,7 @@ export default function Home() {
                   const section = document.getElementById("projects");
                   section?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="px-6 py-2 bg-[#ffde59] text-black font-bold rounded-full shadow-[0_0_10px_#ffde59] hover:shadow-[0_0_20px_#ffde59] hover:scale-105 transition-all duration-300"
+                className="px-6 py-2 bg-[#ffde59] text-black font-md rounded-full shadow-[0_0_10px_#ffde59] hover:shadow-[0_0_20px_#ffde59] hover:scale-105 transition-all duration-300"
               >
                 View Projects
               </button>
