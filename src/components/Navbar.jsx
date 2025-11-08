@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiLogOut, FiMenu, FiX } from "react-icons/fi";
+import logo from "../assets/KBLogo1.png";
 
 export default function Navbar({ active, onNavigate }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,6 @@ export default function Navbar({ active, onNavigate }) {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
   ];
 
   // prevent background scroll & close on ESC
@@ -69,9 +69,11 @@ export default function Navbar({ active, onNavigate }) {
       ref={navRef}
       className="sticky top-4 z-50 mx-auto w-[90%] md:w-[70%] backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl shadow-lg px-6 py-3 flex justify-between items-center transition-all duration-300"
     >
-      <h1 className="text-xl font-semibold text-white cursor-pointer">
-        Kyla<span className="text-[#ffde59]">B</span>
-      </h1>
+        <img
+          src={logo}
+          alt="KylaB logo"
+          className="w-7 h-7 mr-2 object-contain"
+        />
 
       {/* Desktop links */}
       <ul className="hidden md:flex gap-8 text-white/90 text-sm">

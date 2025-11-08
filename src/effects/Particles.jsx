@@ -107,9 +107,6 @@ const Particles = ({
     const renderer = new Renderer({ depth: false, alpha: true });
     const gl = renderer.gl;
     container.appendChild(gl.canvas);
-    // Ensure the canvas is positioned to fully cover the container and sits
-    // behind any UI overlays. Also disable pointer events so UI can capture
-    // clicks while we still receive global mousemove events.
     gl.canvas.style.position = "absolute";
     gl.canvas.style.top = "0";
     gl.canvas.style.left = "0";
@@ -155,9 +152,6 @@ const Particles = ({
     };
 
     if (moveParticlesOnHover) {
-      // listen on both the container and the window. Listening on window
-      // ensures we still receive pointer movement even when other elements
-      // (page content) are stacked above the particle layer.
       container.addEventListener("mousemove", handleMouseMove);
       window.addEventListener("mousemove", handleMouseMove);
     }
