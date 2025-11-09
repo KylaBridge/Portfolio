@@ -5,7 +5,7 @@ export const skills = {
   ],
 
   web: [
-    { id: "html", name: "HTML", level: 96 },
+    { id: "html", name: "HTML", level: 80 },
     { id: "css", name: "CSS", level: 80 },
     { id: "react", name: "ReactJS", level: 45 },
     { id: "tailwind", name: "Tailwind CSS", level: 30 },
