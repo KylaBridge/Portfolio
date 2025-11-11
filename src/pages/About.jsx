@@ -1,6 +1,7 @@
 import { FiMonitor, FiPenTool, FiDownload, FiMail } from "react-icons/fi";
 import { FaLinkedin, FaFacebookF, FaGithub } from "react-icons/fa";
 import profilePic from "../assets/SelfImg.png";
+import CV from "../assets/KylaRosaldo_CV.pdf"
 
 export default function About() {
   return (
@@ -104,7 +105,7 @@ export default function About() {
 
             <div>
               <a
-                href="/assets/KylaRosaldo_CV.pdf"
+                href={CV}
                 className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#ffde59] rounded-full text-[#ffde59] hover:bg-[#ffde59] hover:text-black transition-all duration-200"
                 download="KylaRosaldo_CV.pdf"
               >
